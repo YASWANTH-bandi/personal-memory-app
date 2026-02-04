@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<a href="/logout">Logout</a>
+<br><br>
+
+<h2>My Memory Gallery</h2>
+
+<a href="/upload">Upload New Memory</a>
+<br><br>
+
+<div class="gallery">
+
+{% for file in files %}
+
+<div class="gallery-item">
+
+<p><b>Album:</b> {{ file[1] }}</p>
+
+<img src="/uploads/{{ file[0] }}">
+
+<br>
+<a href="/delete/{{ file[0] }}">Delete</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>

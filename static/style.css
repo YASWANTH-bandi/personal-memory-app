@@ -1,0 +1,74 @@
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+    padding: 12px;
+    margin: 10px 0;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+
+.gallery img,
+.gallery video {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+/* Mobile Screen Adjustment */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}
